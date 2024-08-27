@@ -29,6 +29,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/laundrocss.css" />
   </head>
   <body>
     <nav class="panel-menu" id="mobile-menu">
@@ -180,17 +181,126 @@
       </div>
     </header>
     <main id="tt-pageContent">
-      <div id="js-mainSlider">
-        <div class="mainSlider-preloader">
-          <span class="tt-base-color">Premium</span>Bubble
+      <!-- HERO STARTS -->
+      <!-- carousel -->
+      <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+          <div class="item">
+            <img src="images/hero-laundromat-img-01.jpeg" />
+            <div class="content">
+              <div class="author">@premiumbubble</div>
+              <div class="title">Top-Tier</div>
+              <div class="topic">Equipment</div>
+              <div class="des">
+                <!-- lorem 50 -->
+                Our laundromat is equipped with the best machines available,
+                ensuring your clothes receive the highest level of care. From
+                delicate fabrics to everyday wear, we handle it all with
+                precision and care.
+              </div>
+              <div class="buttons">
+                <button>Call Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/hero-laundromat-img-02.jpeg" />
+            <div class="content">
+              <div class="author">@premiumbubble</div>
+              <div class="title">Delivery</div>
+              <div class="topic">Services</div>
+              <div class="des">
+                Let us bring the laundromat to you! Enjoy the convenience of our
+                free pick-up and delivery service, designed to fit seamlessly
+                into your busy lifestyle. Laundry has never been this easy.
+              </div>
+              <div class="buttons">
+                <button>Call Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/hero-laundromat-img-03.jpg" />
+            <div class="content">
+              <div class="author">@premiumbubble</div>
+              <div class="title">Exceptional</div>
+              <div class="topic">Service</div>
+              <div class="des">
+                At Premium Bubble, we take pride in providing not just a
+                service, but an experience. Our friendly staff, spotless
+                facilities, and commitment to quality ensure that every visit to
+                our laundromat is a pleasure.
+              </div>
+              <div class="buttons">
+                <button>Call Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/hero-laundromat-img-04.jpeg" />
+            <div class="content">
+              <div class="author">@premiumbubble</div>
+              <div class="title">Laundry</div>
+              <div class="topic">Convenience</div>
+              <div class="des">
+                Step into the future of laundry at Premium Bubble. Our
+                self-service laundromat offers the latest technology, making
+                laundry day easier and more efficient than ever. Say goodbye to
+                long waits and hello to sparkling clean clothes.
+              </div>
+              <div class="buttons">
+                <button>Call Now</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mainSlider-wrapper"></div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+          <div class="item">
+            <img src="images/hero-laundromat-img-01.jpeg" />
+            <!-- <div class="content">
+              <div class="title">Top Tier</div>
+              <div class="description">Our laundro...</div>
+            </div> -->
+          </div>
+          <div class="item">
+            <img src="images/hero-laundromat-img-02.jpeg" />
+            <div class="content">
+              <!-- <div class="title">Name Slider</div>
+              <div class="description">Description</div> -->
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/hero-laundromat-img-03.jpg" />
+            <div class="content">
+              <!-- <div class="title">Name Slider</div>
+              <div class="description">Description</div> -->
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/hero-laundromat-img-04.jpeg" />
+            <div class="content">
+              <!-- <div class="title">Name Slider</div>
+              <div class="description">Description</div> -->
+            </div>
+          </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
       </div>
+      <!-- HERO ENDS -->
       <div
         class="section-inner lazyload bg-top-left move-top-bottom tt-overflow-hidden"
         data-bg="images/wrapper01.png"
       >
-        <div class="container container-fluid-xl">
+        <!-- <div class="container container-fluid-xl">
           <div class="box01">
             <div class="box01__img">
               <img
@@ -272,11 +382,215 @@
               </div>
             </div>
           </div>
+        </div> -->
+        <!-- jjkjkg -->
+        <!-- come back -->
+        <div class="tt-position-relative">
+          <div class="section-indent">
+            <div
+              class="lazyload tt-obj02-bg"
+              data-bg="images/wrapper05.png"
+            ></div>
+            <div class="container">
+              <div class="title-block text-center">
+                <div class="title-block__label">[ Affordable Prices ]</div>
+                <h4 class="title-block__title">
+                  Our Dry Cleaning & Laundry Prices
+                </h4>
+                <div class="title-block__text">
+                  Our prices are simple and affordable which are easy on
+                  pocket<br />
+                  in comparison with the high street prices
+                </div>
+              </div>
+              <div
+                class="slick-default promo03__wrapper"
+                data-slick='{
+							"slidesToShow": 4,
+							"autoplaySpeed": 4500,
+							"slidesToScroll": 4,
+							"autoplay":true,
+							"responsive": [
+								{
+									"breakpoint": 1025,
+									"arrows": false,
+									"settings": {
+										"slidesToShow": 2,
+										"slidesToScroll": 2
+									}
+								},
+								{
+									"breakpoint": 651,
+									"settings": {
+										"slidesToShow": 1,
+										"slidesToScroll": 1
+									}
+								}
+							]
+						}'
+              >
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon icons-884417"></div>
+                      <div class="promo03__title">Shirts Service</div>
+                      <div class="promo03__subtitle">Washed and Pressed</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$2.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon icons-868044"></div>
+                      <div class="promo03__title">Day Dress Service</div>
+                      <div class="promo03__subtitle">Dry Clean</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$10.50</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon icons-1233149"></div>
+                      <div class="promo03__title">Dry Cleaning</div>
+                      <div class="promo03__subtitle">Wash, Dry and Fold</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$2.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon icons-495018"></div>
+                      <div class="promo03__title">Bedding</div>
+                      <div class="promo03__subtitle">
+                        Bed Set (Wash and Press)
+                      </div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$10.50</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon">
+                        <i class="icons-2737832"></i>
+                      </div>
+                      <div class="promo03__title">Blanket Service</div>
+                      <div class="promo03__subtitle">Washed and Pressed</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$25.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon">
+                        <i class="icons-863958"></i>
+                      </div>
+                      <div class="promo03__title">Curtains Service</div>
+                      <div class="promo03__subtitle">Washed and Pressed</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$22.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon">
+                        <i class="icons-486676"></i>
+                      </div>
+                      <div class="promo03__title">Ironing Service</div>
+                      <div class="promo03__subtitle">Iron and Fold</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$3.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon">
+                        <i class="icons-1072668"></i>
+                      </div>
+                      <div class="promo03__title">Repairs & Alterations</div>
+                      <div class="promo03__subtitle">Simple Sewing</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$12.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- SERVICES -->
-      <div class="lazyload bg-top-right" data-bg="images/wrapper02.png">
+      <!-- <div class="lazyload bg-top-right" data-bg="images/wrapper02.png">
         <div class="section-indent no-margin">
           <div class="container-fluid">
             <div class="title-block text-center">
@@ -596,132 +910,396 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div
         class="tt-position-relative bg-top-left move-bottom-top lazyload"
         data-bg="images/wrapper03.png"
       >
-        <div class="section-inner">
-          <div class="box02 box02__img-left">
-            <div class="box02__img">
-              <picture>
-                <source
-                  srcset="images/herogame.jpg"
-                  media="(max-width: 650px)"
-                  type="image/webp"
+        <div class="section-indent">
+          <div class="container container-fluid-lg">
+            <div
+              class="row align-items-center stepbox_wrapper"
+              style="overflow: hidden"
+            >
+              <div class="col-md-6 col-lg-5 stepbox__layout">
+                <img
+                  class="tt-arrow lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="images/arrow-img-right02.png"
+                  alt=""
                 />
-                <source
-                  srcset="images/herogame.jpg"
-                  media="(max-width: 650px)"
-                  type="image/png"
-                />
-                <source
-                  srcset="images/herogame.jpg"
-                  media="(max-width: 1024px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="images/herogame.jpg"
-                  media="(max-width: 1024px)"
-                  type="image/png"
-                />
-                <source srcset="images/herogame.jpg" type="image/webp" />
-                <source srcset="images/herogame.jpg" type="image/png" />
-                <img src="dimages/herogame.jpg" alt="" />
-              </picture>
-              <img
-                class="tt-arrow lazyload"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="images/arrow-img-right03.png"
-                alt=""
-              />
-            </div>
-            <div class="box02__content">
-              <div class="title-block">
-                <div class="title-block__label">[ come have fun! ]</div>
-                <h4 class="title-block__title">Gaming Lounge<br /></h4>
+                <div class="title-block">
+                  <div class="title-block__label">
+                    [ Get Your Clothes Collected & Delivered ]
+                  </div>
+                  <h4 class="title-block__title">How We Work</h4>
+                </div>
+                <p>
+                  Our Service is dedicated to making your life easier by
+                  providing pick up laundry service. Give yourself one less
+                  thing to worry about and try our residential wash and fold
+                  service that includes pick up and delivery.
+                </p>
+                <p>
+                  We have been in the laundry business for more than 12 years
+                  and would love to earn your business. Try us today and save
+                  $10 Off your first laundry service of 20 pounds or more.
+                </p>
+                <a
+                  href="#"
+                  class="tt-btn tt-btn__top"
+                  data-toggle="modal"
+                  data-target="#modalMRequestQuote"
+                >
+                  <span class="mask">Get Service Now</span>
+                  <div class="button">Get Service Now</div>
+                </a>
               </div>
-              <p>
-                Step into a world of excitement and entertainment at Premium
-                Bubble's Gaming Lounge! Whether you're a casual gamer or a
-                hardcore enthusiast, our lounge is the perfect place to unwind
-                and have fun. <br />
-                Whether you're looking to relax after a workout, spend time with
-                friends, or dive into the latest games, our Gaming Lounge is the
-                place to be. Come experience the ultimate gaming environment at
-                Premium Bubble!
-              </p>
-              <div class="row tt-list01__top">
-                <div class="col-lg-6">
-                  <ul class="tt-list01">
-                    <li>Latest Consoles and Games</li>
-                    <li>Comfortable Gaming Stations</li>
-                    <li>Multiplayer Fun</li>
-                    <li>Friendly Atmosphere</li>
+              <div class="col-md-6 col-lg-6 offset-lg-1">
+                <div class="slider-stepbox" id="js-stepbox__layout">
+                  <div class="tt-item active" data-number="1">
+                    <div class="stepbox">
+                      <div class="stepbox__img">
+                        <img
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          class="lazyload"
+                          data-src="images/stepbox-img01.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="stepbox__content">
+                        <div class="stepbox__number">01</div>
+                        <div class="stepbox__limitation">
+                          <h6 class="stepbox__title">
+                            <span class="tt-base-color">Bag Up</span> All Your
+                            Dirty Clothes
+                          </h6>
+                          <p>
+                            We are pleased to pickup your<br />
+                            laundry and ensure that it is expertly laundered and
+                            pressed.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tt-item" data-number="2">
+                    <div class="stepbox">
+                      <div class="stepbox__img">
+                        <img
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          class="lazyload"
+                          data-src="images/stepbox-img02.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="stepbox__content">
+                        <div class="stepbox__number">02</div>
+                        <div class="stepbox__limitation">
+                          <h6 class="stepbox__title">
+                            We <span class="tt-base-color">Pick Up</span> Your
+                            Clothes
+                          </h6>
+                          <p>
+                            Morning of your pickup, leave your bags in their
+                            designated pickup location by 8:00 am for a driver
+                            to pick up.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tt-item" data-number="3">
+                    <div class="stepbox">
+                      <div class="stepbox__img">
+                        <img
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          class="lazyload"
+                          data-src="images/stepbox-img03.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="stepbox__content">
+                        <div class="stepbox__number">03</div>
+                        <div class="stepbox__limitation">
+                          <h6 class="stepbox__title">
+                            We <span class="tt-base-color">Clean</span> Your
+                            Clothes
+                          </h6>
+                          <p>
+                            Our facilities are so good we guarantee you’ll be
+                            satisfied – we put a quality guarantee on all items
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tt-item" data-number="4">
+                    <div class="stepbox">
+                      <div class="stepbox__img">
+                        <img
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          class="lazyload"
+                          data-src="images/stepbox-img04.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="stepbox__content">
+                        <div class="stepbox__number">04</div>
+                        <div class="stepbox__limitation">
+                          <h6 class="stepbox__title">
+                            We <span class="tt-base-color">Deliver</span> Clean,
+                            Folded Clothes
+                          </h6>
+                          <p>
+                            We’ll deliver your pristine garments back to you,
+                            anytime and anywhere
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="stepbox-dots__wrapper"
+                  id="js-stepbox__nav"
+                  data-number="1"
+                >
+                  <div
+                    class="stepbox-dots__line01 lazyload"
+                    data-bg="images/step-line-x.png"
+                  ></div>
+                  <div
+                    class="stepbox-dots__line02 lazyload"
+                    data-bg="images/step-line2-x.png"
+                  ></div>
+                  <ul class="stepbox-dots" role="tablist">
+                    <li class="active nav-01" data-number="1">
+                      <button type="button" role="tab">1</button>
+                    </li>
+                    <li data-number="2">
+                      <button type="button" role="tab">2</button>
+                    </li>
+                    <li data-number="3">
+                      <button type="button" role="tab">3</button>
+                    </li>
+                    <li data-number="4">
+                      <button type="button" role="tab">4</button>
+                    </li>
                   </ul>
                 </div>
-                <!-- <div class="col-lg-6">
-                  <ul class="tt-list01">
-                    <li>Assisted Living / Nursing Homes</li>
-                    <li>Hotels &amp; Motels</li>
-                    <li>Nail Salons</li>
-                    <li>Athletic Facilities / Gyms</li>
-                  </ul>
-                </div> -->
               </div>
-              <div class="box02-list-col"></div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="section-indent">
-        <div class="container-fluid no-gutters">
-          <div class="box02 box02__img-right">
-            <div class="box02__img">
-              <picture>
-                <source
-                  srcset="images/herogym.jpg"
-                  media="(max-width: 650px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="images/herogym.jpg"
-                  media="(max-width: 650px)"
-                  type="image/png"
-                />
-                <source
-                  srcset="images/herogym.jpg"
-                  media="(max-width: 1024px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="images/herogym.jpg"
-                  media="(max-width: 1024px)"
-                  type="image/png"
-                />
-                <source srcset="images/herogym.jpg" type="image/webp" />
-                <img src="images/herogym.jpg" alt="" />
-              </picture>
-              <img class="tt-arrow" src="images/arrow-img-left02.png" alt="" />
-            </div>
-            <div class="box02__content">
-              <div class="title-block">
-                <div class="title-block__label">[ Turn Fat into Fit ]</div>
-                <h4 class="title-block__title">Our Gym</h4>
+        <!-- come back -->
+        <!-- <div class="tt-position-relative">
+          <div class="section-indent">
+            <div
+              class="lazyload tt-obj02-bg"
+              data-bg="images/wrapper05.png"
+            ></div>
+            <div class="container">
+              <div class="title-block text-center">
+                <div class="title-block__label">[ Affordable Prices ]</div>
+                <h4 class="title-block__title">
+                  Our Dry Cleaning & Laundry Prices
+                </h4>
+                <div class="title-block__text">
+                  Our prices are simple and affordable which are easy on
+                  pocket<br />
+                  in comparison with the high street prices
+                </div>
               </div>
-              <p>
-                At Premium Bubble, our gym is more than just a place to work
-                out—it's a space where you can achieve your fitness goals in a
-                supportive and motivating environment.
-              </p>
+              <div
+                class="slick-default promo03__wrapper"
+                data-slick='{
+							"slidesToShow": 4,
+							"autoplaySpeed": 4500,
+							"slidesToScroll": 4,
+							"autoplay":true,
+							"responsive": [
+								{
+									"breakpoint": 1025,
+									"arrows": false,
+									"settings": {
+										"slidesToShow": 2,
+										"slidesToScroll": 2
+									}
+								},
+								{
+									"breakpoint": 651,
+									"settings": {
+										"slidesToShow": 1,
+										"slidesToScroll": 1
+									}
+								}
+							]
+						}'
+              >
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon icons-884417"></div>
+                      <div class="promo03__title">Shirts Service</div>
+                      <div class="promo03__subtitle">Washed and Pressed</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$2.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon icons-868044"></div>
+                      <div class="promo03__title">Day Dress Service</div>
+                      <div class="promo03__subtitle">Dry Clean</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$10.50</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon icons-1233149"></div>
+                      <div class="promo03__title">Dry Cleaning</div>
+                      <div class="promo03__subtitle">Wash, Dry and Fold</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$2.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon icons-495018"></div>
+                      <div class="promo03__title">Bedding</div>
+                      <div class="promo03__subtitle">
+                        Bed Set (Wash and Press)
+                      </div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$10.50</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon">
+                        <i class="icons-2737832"></i>
+                      </div>
+                      <div class="promo03__title">Blanket Service</div>
+                      <div class="promo03__subtitle">Washed and Pressed</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$25.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon">
+                        <i class="icons-863958"></i>
+                      </div>
+                      <div class="promo03__title">Curtains Service</div>
+                      <div class="promo03__subtitle">Washed and Pressed</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$22.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon">
+                        <i class="icons-486676"></i>
+                      </div>
+                      <div class="promo03__title">Ironing Service</div>
+                      <div class="promo03__subtitle">Iron and Fold</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$3.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-item">
+                  <div class="promo03 js-handler">
+                    <div class="promo03__move">
+                      <div class="promo03__icon">
+                        <i class="icons-1072668"></i>
+                      </div>
+                      <div class="promo03__title">Repairs & Alterations</div>
+                      <div class="promo03__subtitle">Simple Sewing</div>
+                      <div class="promo03__price">
+                        <span class="tt-value">$12.00</span>
+                      </div>
+                      <div class="promo03__show-btn">
+                        <a href="#" class="tt-btn">
+                          <span class="mask">Order Now</span>
+                          <div class="button">Order Now</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <!-- testimony -->
-      <!-- <div class="section-indent">
+      <div class="section-indent">
         <div class="container container-fluid-lg">
           <div class="blog-slider" id="blog-slider">
             <div class="blog-slider__img">
@@ -793,23 +1371,18 @@
                 <div class="title-block">
                   <div class="title-block__label">[ Our Testimonials ]</div>
                   <h4 class="title-block__title">
-                    Professional, Reliable & Cost Effective
+                    Unmatched Quality and Convenience
                   </h4>
                 </div>
                 <blockquote>
                   <p>
-                    "This was my first time coming to a Laundromat ever. I was
-                    greeted by a woman with a warm smile. I was looking around
-                    and she could tell I needed help. She started me up with
-                    purchasing a Laundry Card. She then gave me recommendations
-                    per the clothes I had. She was so helpful and friendly.
-                    Being new to the city this is now my go to. Very clean and
-                    up date machines. :)"
+                    "Premium Bubble's laundry service is simply the best. My
+                    clothes always come back fresh and perfectly cleaned. The
+                    staff is friendly, and the whole process is hassle-free. I
+                    wouldn’t go anywhere else!"
                   </p>
                   <p>
-                    <strong class="tt-base-color02"
-                      >- Teresa and Kevin K.</strong
-                    >
+                    <strong class="tt-base-color02">- Kwame O.</strong>
                   </p>
                 </blockquote>
               </div>
@@ -817,21 +1390,18 @@
                 <div class="title-block">
                   <div class="title-block__label">[ Our Testimonials ]</div>
                   <h4 class="title-block__title">
-                    Very Pleased. Will Definitely be Back.
+                    Efficient and Reliable Service.
                   </h4>
                 </div>
                 <blockquote>
                   <p>
-                    I don’t dry clean a lot of clothes, but I’ve been going here
-                    for 5 years and they have never once been late, the customer
-                    service is always great, and I’ve never had a quality
-                    concern. As I recall from my previous dry cleaner, they
-                    might be slightly above market cost, but I’m willing to pay
-                    a small premium for consistency though I recognize that cost
-                    may be the most important consideration.
+                    "I was amazed at the quality of service at Premium Bubble.
+                    The machines are high-tech, and the turnaround time is super
+                    fast. It’s the most efficient laundry service I’ve ever used
+                    in Lashibi!."
                   </p>
                   <p>
-                    <strong class="tt-base-color02">- Alice Munguia</strong>
+                    <strong class="tt-base-color02">- Nana K.</strong>
                   </p>
                 </blockquote>
               </div>
@@ -839,20 +1409,19 @@
                 <div class="title-block">
                   <div class="title-block__label">[ Our Testimonials ]</div>
                   <h4 class="title-block__title">
-                    Excellent and Superb Customer Service
+                    A Game-Changer for Busy Lives
                   </h4>
                 </div>
                 <blockquote>
                   <p>
-                    “The washer and dryer at my apartment building are not so
-                    great, so this has become my go-to spot every weekend. The
-                    prices are pretty reasonable, and they have big washers so I
-                    can get a lot done at once. There are plenty of couches and
-                    tables and chairs. They have TVs, arcade games, and a pool
-                    table. It’s not a bad place to hang out and do laundry.”
+                    “I’ve never experienced such convenience before! The
+                    self-service laundromat at Premium Bubble is a game-changer.
+                    The machines are top-notch, and the free pick-up and
+                    delivery service makes my life so much easier. Highly
+                    recommend!”
                   </p>
                   <p>
-                    <strong class="tt-base-color02">- Lena Broughton</strong>
+                    <strong class="tt-base-color02">- Sarah A.</strong>
                   </p>
                 </blockquote>
               </div>
@@ -865,22 +1434,20 @@
                 </div>
                 <blockquote>
                   <p>
-                    "I was skeptical about leaving my clothes to be washed dried
-                    and folded by someone I did not know, and let me tell you I
-                    was beyond amazed by the quality they put into the process
-                    of washing drying and folding. It was packaged and put back
-                    into the bin I delivered my dirty clothes in, and was
-                    notified through email and text when it was ready!"
+                    "From the moment I dropped off my clothes to the timely
+                    delivery, Premium Bubble exceeded my expectations. The
+                    attention to detail and care they put into my laundry is
+                    unparalleled. Five stars!"
                   </p>
                   <p>
-                    <strong class="tt-base-color02">- Beverly Garmon</strong>
+                    <strong class="tt-base-color02">- Afua M.</strong>
                   </p>
                 </blockquote>
               </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <div class="tt-position-relative tt-overflow-hidden">
         <div class="lazyload tt-obj03-bg" data-bg="images/wrapper06.png"></div>
@@ -1034,6 +1601,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script async src="js/bundle.js"></script>
+    <script async src="js/laundrojs.js"></script>
 
     <!-- modal - Make an Appointment -->
     <div
