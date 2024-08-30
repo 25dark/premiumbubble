@@ -18,13 +18,13 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'smartbeeinc6@gmail.com';                     //SMTP username
+    $mail->Username   = 'Premium Bubble';                     //SMTP username
     $mail->Password   = 'ffxx yjmw fuwv klst';                               //SMTP password
     $mail->SMTPSecure = "ssl";            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
    // Recipients
-$mail->setFrom('info@premium-bubble.com', 'Premium Bubble');
+$mail->setFrom('smartbeeinc6@gmail.com', 'Premium Bubble');
 $mail->addAddress($email, 'Premium Bubble Laundry Pick-up'); // Add a recipient
 
 // Passed variables
