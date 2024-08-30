@@ -18,41 +18,44 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'mailwebsmirno@gmail.com';                     //SMTP username
-    $mail->Password   = 'mail0web_smirnoQ';                               //SMTP password
+    $mail->Username   = 'smartbeeinc6@gmail.com';                     //SMTP username
+    $mail->Password   = 'ffxx yjmw fuwv klst';                               //SMTP password
     $mail->SMTPSecure = "ssl";            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    //Recipients
-    $mail->setFrom('mailwebsmirno@gmail.com', 'ProLaundry');
-    $mail->addAddress('youremail@gmail.com', 'ProLaundry');     //Add a recipient
+   // Recipients
+$mail->setFrom('info@premium-bubble.com', 'Premium Bubble');
+$mail->addAddress($email, 'Premium Bubble Laundry Pick-up'); // Add a recipient
 
-    //Passed variables
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-	$phonenumber = $_POST['phone'];
-	$modalAddress = $_POST['modalAddress'];
-	$service = $_POST['service'];
-	$datePickUp = $_POST['date-pick-up'];
-	$dateDelivery = $_POST['date-delivery'];
-	$message = $_POST['message'];
+// Passed variables
+$name = htmlspecialchars($_POST['name']);
+$email = htmlspecialchars($_POST['email']);
+$phone = htmlspecialchars($_POST['phone']);
+$address = htmlspecialchars($_POST['address']);
+$service = htmlspecialchars($_POST['service']);
+$datePickUp = htmlspecialchars($_POST['pickup-date']);
+$dateDelivery = htmlspecialchars($_POST['delivery-date']);
+$message = htmlspecialchars($_POST['message']);
 
-    //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is what was sent ProLaundry, form "Schedule a Pickup"';
-    $mail->Body    =
-    	'Name: ' .$name.
-    	'<br>E-mail: ' .$email.
-    	'<br>Phone: ' .$phonenumber.
-    	'<br>Address: ' .$modalAddress.
-    	'<br>Service: ' .$service.
-    	'<br>Date Pick Up: ' .$datePickUp.
-    	'<br>Date Delivery: ' .$dateDelivery.
-    	'<br>message: ' .$message;
-    //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+// Content
+$mail->isHTML(true); // Set email format to HTML
+$mail->Subject = 'Laundry Pick-up Request - Premium Bubble';
+$mail->Body    = 
+    'Name: ' . $name .
+    '<br>Email: ' . $email .
+    '<br>Phone: ' . $phone .
+    '<br>Pickup Address: ' . $address .
+    '<br>Service: ' . $service .
+    '<br>Preferred Pickup Date: ' . $datePickUp .
+    '<br>Preferred Delivery Date: ' . $dateDelivery .
+    '<br>Message: ' . nl2br($message); // nl2br converts newlines to <br> tags
+
+//$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
 
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+
