@@ -25,7 +25,7 @@ try {
 
    // Recipients
 $mail->setFrom('smartbeeinc6@gmail.com', 'Premium Bubble');
-$mail->addAddress($email, 'Premium Bubble Laundry Pick-up'); // Add a recipient
+$mail->addAddress("henrydanso6@gmail.com", 'Premium Bubble Laundry Pick-up'); // Add a recipient
 
 // Passed variables
 $name = htmlspecialchars($_POST['name']);
