@@ -36,7 +36,6 @@ $datePickUp = htmlspecialchars($_POST['pickup-date']);
 $dateDelivery = htmlspecialchars($_POST['delivery-date']);
 $message = htmlspecialchars($_POST['message']);
 
-
    // Recipients
 $mail->setFrom('smartbeeinc6@gmail.com', 'Premium Bubble');
 $mail->addAddress($email, 'Premium Bubble Laundry Pick-up'); // Add a recipient
