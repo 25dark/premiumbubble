@@ -14,7 +14,7 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     // $mail->Host       = 'smtp.titan.email';                     //Set the SMTP server to send through
@@ -28,7 +28,7 @@ try {
 
    // Recipients
 $mail->setFrom('smartbeeinc6@gmail.com', 'Premium Bubble');
-$mail->addAddress("henrydanso6@gmail.com", 'Premium Bubble Laundry Pick-up'); // Add a recipient
+$mail->addAddress($email, 'Premium Bubble Laundry Pick-up'); // Add a recipient
 
 // Passed variables
 $name = htmlspecialchars($_POST['name']);
