@@ -26,11 +26,7 @@ try {
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     // $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-   // Recipients
-$mail->setFrom('smartbeeinc6@gmail.com', 'Premium Bubble');
-$mail->addAddress($email, 'Premium Bubble Laundry Pick-up'); // Add a recipient
-
-// Passed variables
+    // Passed variables
 $name = htmlspecialchars($_POST['name']);
 $email = htmlspecialchars($_POST['email']);
 $phone = htmlspecialchars($_POST['phone']);
@@ -39,6 +35,12 @@ $service = htmlspecialchars($_POST['service']);
 $datePickUp = htmlspecialchars($_POST['pickup-date']);
 $dateDelivery = htmlspecialchars($_POST['delivery-date']);
 $message = htmlspecialchars($_POST['message']);
+
+
+   // Recipients
+$mail->setFrom('smartbeeinc6@gmail.com', 'Premium Bubble');
+$mail->addAddress($email, 'Premium Bubble Laundry Pick-up'); // Add a recipient
+
 
 // Content
 $mail->isHTML(true); // Set email format to HTML
