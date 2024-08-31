@@ -20,11 +20,11 @@ try {
     $mail->Host       = 'smtp.titan.email';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'info@heritagecommunitysavings.com';                     //SMTP username
-    $mail->Password   = 'Hertage22ko@"';                               //SMTP password
-    $mail->SMTPSecure = "ssl";            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-$mail->SMTPAuth = true;
-$mail->IsHTML(true);
+    $mail->Password   = 'Hertage22ko@';                               //SMTP password
+    // $mail->SMTPSecure = "ssl";            //Enable implicit TLS encryption
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
+    $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    // $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
    // Recipients
 $mail->setFrom('info@heritagecommunitysavings.com', 'Premium Bubble');
