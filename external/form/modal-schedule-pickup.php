@@ -23,6 +23,8 @@ try {
     $mail->Password   = 'Hertage22ko@"';                               //SMTP password
     $mail->SMTPSecure = "ssl";            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+$mail->SMTPAuth = true;
+$mail->IsHTML(true);
 
    // Recipients
 $mail->setFrom('info@heritagecommunitysavings.com', 'Premium Bubble');
