@@ -56,7 +56,8 @@ $mail->Body    =
 
 
     $mail->send();
-    echo 'Message has been sent';
+    header('Location: messagesent.html');
+    exit();
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
