@@ -1050,108 +1050,31 @@
             <div class="col-md-4">
               <h6 class="f-title">Newsletter Subscribe</h6>
               <form
-                class="form-modal"
-                id="jsFormRequestPickup"
+                id="subscribeform"
                 method="post"
                 novalidate="novalidate"
-                action="external/form/modal-schedule-pickup.php"
+                action="external/form/newsletter-form.php"
               >
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    id="modalName01"
-                    placeholder="Your Name *"
-                    required
-                  />
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        name="email"
-                        class="form-control"
-                        id="modalEmail01"
-                        placeholder="Your Email Address *"
-                        required
-                      />
+                <div class="f-form">
+                  <div class="f-form__label">
+                    Sign up and receive our special offers.
+                  </div>
+                  <div class="f-form__input">
+                    <input
+                      type="text"
+                      name="email"
+                      class="form-control"
+                      placeholder="Your e-mail address"
+                    />
+                  </div>
+                  <div class="f-form__btn">
+                    <div class="tt-btn">
+                      <span class="mask">Subscribe now</span>
+                      <button class="button" type="submit">
+                        Subscribe now
+                      </button>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="tel"
-                        name="phone"
-                        class="form-control"
-                        id="modalPhone01"
-                        placeholder="Your Phone Number *"
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="address"
-                    class="form-control"
-                    id="modalAddress"
-                    placeholder="Pickup Address *"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <div class="custom-select">
-                    <select name="service" class="tt-select" required>
-                      <option value="" disabled selected>Select Service</option>
-                      <option value="wash">Wash</option>
-                      <option value="dry">Dry</option>
-                      <option value="wash-and-dry">Wash & Dry</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input
-                        name="pickup-date"
-                        placeholder="Preferred Pickup Date *"
-                        autocomplete="off"
-                        data-timepicker="true"
-                        class="js_datepicker-1 form-control"
-                        type="text"
-                        required
-                      />
-                      <div class="form-group__icon icons-747310"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input
-                        name="delivery-date"
-                        placeholder="Preferred Delivery Date *"
-                        autocomplete="off"
-                        data-timepicker="true"
-                        class="js_datepicker-2 form-control"
-                        type="text"
-                        required
-                      />
-                      <div class="form-group__icon icons-747310"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea
-                    name="message"
-                    class="form-control"
-                    placeholder="Additional Instructions (Optional)"
-                  ></textarea>
-                </div>
-                <div class="tt-btn tt-btn__wide">
-                  <span class="mask">Schedule Pickup</span>
-                  <button type="submit" class="button">Schedule Pickup</button>
                 </div>
                 <div class="tt-modal-message">Form sent successfully</div>
               </form>
